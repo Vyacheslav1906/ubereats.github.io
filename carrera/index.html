@@ -12,9 +12,7 @@
 </head>
 <body>
 
-	<input type="checkbox" id="nav-toggle" hidden>
 	<nav class="nav">
-		<label for="nav-toggle" class="nav-toggle" onclick></label>
 		<ul>
 			<li><a href="#1">Один</a></li>
 			<li><a href="#2">Два</a></li>
@@ -24,6 +22,7 @@
 			<li><a href="#6">Шесть</a></li>
 			<li><a href="#7">Семь</a></li>
 		</ul>
+		<div class="close_button"></div>
 	</nav>
 	<div class="mask-content"></div>
 
@@ -42,17 +41,61 @@
 				<a href="#">
 					<img src="img/mob_logo.png" alt="logo" class="mob_logo_img">
 				</a>
+				<span class="mob_number">044 485 15 24</span>
+				<div class="mobmenu_button">
+					<img src="img/mobmenu.png" alt="#">
+				</div>
 			</div>
 		</div>
 
 		<div class="slider_container">
-			<div class="slider">
-				<div class="slide1 slide_box"><img src="img/img_bg.png" alt="slide"></div>
-				<div class="slide2 slide_box"><img src="img/img_bg2.png" alt="slide"></div>
+			<div class="header-slider">
+				<div class="slide1 slide_box">
+					<div class="mask"></div>
+					<div class="header_info">
+						<span class="slide_info_title">Конвекторы</span>
+						<span class="slide_info_subtitle">Водяного отопления</span>
+						<span class="slide_info_description">Конвекторы Каррера - красота комфорта в отоплении<br>Национальный производитель конвекторов</span>
+					</div>
+					<img src="img/img_bg.png" alt="slide">
+				</div>
+
+				<div class="slide2 slide_box">
+					<div class="mask"></div>
+					<div class="header_info">
+						<span class="slide_info_title">Конвекторы 2</span>
+						<span class="slide_info_subtitle">Водяного отопления 2</span>
+						<span class="slide_info_description">Конвекторы Каррера - красота комфорта в отоплении 2<br>Национальный производитель конвекторов 2</span>
+					</div>
+					<img src="img/img_bg2.png" alt="slide">
+				</div>
 			</div>
-			<div class="mask"></div>
+			
+
 			<div class="wrapper wrslider">
-				<a href="#" class="header_logo"><img src="img/logo.png" alt="logo"></a>
+				<div class="header_top">
+					<a href="#" class="header_logo"><img src="img/logo.png" alt="logo"></a>
+
+					<div class="header_top_menu">
+						<ul class="header_top_left_menu">
+							<li><a href="#">Продукция</a></li>
+							<li><a href="#">Галерея</a></li>
+							<li><a href="#">Колькулятор</a></li>
+						</ul>
+						<ul class="header_top_right_menu">
+							<li><a href="#">Компания</a></li>
+							<li><a href="#">Дилеры</a></li>
+						</ul>
+					</div>
+
+					<div class="header_lang">
+						<span>044 485 15 24</span>
+						<a href="#"><img src="img/ic_lang.png" alt=""></a>
+					</div>
+				</div>
+
+				
+
 				<div class="slider_button">
 					<span class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
 					<span class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
@@ -66,29 +109,113 @@
 					<li><a href="#"><img src="img/it_twitter.png" alt="tw"></a></li>
 				</ul>
 
-				<a href="#" class="header_lang"><img src="img/ic_lang.png" alt=""></a>
+				<div class="header_adress">
+					<span>04073 Украина, .г Киев</span><br>
+					<span>ул. Сырецкая, 9</span>
+				</div>
+				
 			</div>
 		</div>
-		<a href="#" class="header_arrow"><img src="img/ic_arrow.png" alt="click me"></a>
+
+		<div class="header_arrow">
+			<div class="wrapper">
+				<span class="header_arrow_left">Каталог продукции</span>
+				<a href="#" class="header_arrow_link"><img src="img/ic_arrow.png" alt="click me"></a>
+				<div class="header_arrow_right">
+					<span class="header_arrow_right_box">
+						<span>500</span>
+						<span>Моделей<br>продукции</span>
+					</span>
+					<span class="header_arrow_right_box">
+						<span>147</span>
+						<span>Торговых<br>площадок</span>
+					</span>
+				</div>
+			</div>
+			
+		</div>
+		
 	</header>
 
 	<div class="wrapper b_li" id="b_2">
+		
 		<div class="search_box">
-			<input type="search" class="search">
+			<h2 class="block_title">Каталог продукции</h2>
+			<div class="search"><span>Калькулятор</span></div>
 		</div>
 
 		<ul class="cards">
-			<li><a href="#"><img src="img/001.png" alt="pic"></a></li>
-			<li><a href="#"><img src="img/002.png" alt="pic"></a></li>
-			<li><a href="#"><img src="img/003.png" alt="pic"></a></li>
-			<li><a href="#"><img src="img/004.png" alt="pic"></a></li>
-			<li><a href="#"><img src="img/005.png" alt="pic"></a></li>
-			<li><a href="#"><img src="img/006.png" alt="pic"></a></li>
+			<li>
+				<div class="cards_info">
+					<span class="cards_info_left">
+						<span class="cards_info_left_title">Внутрипольные</span>
+						<span class="cards_info_left_subtitle">Конвекторы</span>
+					</span>
+					<span class="cards_info_right">01</span>
+				</div>
+				<a href="#"><img src="img/001.png" alt="pic"></a>
+			</li>
+
+			<li>
+				<div class="cards_info">
+					<span class="cards_info_left">
+						<span class="cards_info_left_title">Напольные</span>
+						<span class="cards_info_left_subtitle">Конвекторы</span>
+					</span>
+					<span class="cards_info_right">02</span>
+				</div>
+				<a href="#"><img src="img/002.png" alt="pic"></a>
+			</li>
+
+			<li>
+				<div class="cards_info">
+					<span class="cards_info_left">
+						<span class="cards_info_left_title">Плинтусные</span>
+						<span class="cards_info_left_subtitle">Конвекторы</span>
+					</span>
+					<span class="cards_info_right">03</span>
+				</div>
+				<a href="#"><img src="img/003.png" alt="pic"></a>
+			</li>
+
+			<li>
+				<div class="cards_info">
+					<span class="cards_info_left">
+						<span class="cards_info_left_title">Настенные</span>
+						<span class="cards_info_left_subtitle">Конвекторы</span>
+					</span>
+					<span class="cards_info_right">04</span>
+				</div>
+				<a href="#"><img src="img/004.png" alt="pic"></a>
+			</li>
+
+			<li>
+				<div class="cards_info">
+					<span class="cards_info_left">
+						<span class="cards_info_left_title">Цокольные</span>
+						<span class="cards_info_left_subtitle">Конвекторы</span>
+					</span>
+					<span class="cards_info_right">05</span>
+				</div>
+				<a href="#"><img src="img/005.png" alt="pic"></a>
+			</li>
+
+			<li>
+				<div class="cards_info">
+					<span class="cards_info_left">
+						<span class="cards_info_left_title">Комплектация</span>
+						<span class="cards_info_left_subtitle">Управление и терморегулирование</span>
+					</span>
+					<span class="cards_info_right">06</span>
+				</div>
+				<a href="#"><img src="img/006.png" alt="pic"></a>
+			</li>
 		</ul>
 	</div>
 
 	<div class="partners b_li" id="b_3">
 		<div class="wrapper">
+			<h2 class="block_title">Наши клиенты</h2>
 			<div class="partners-slider">
 				<div class="partners_box off360"><img src="img/p1.png" alt="pic"></div>
 				<div class="partners_box off360"><img src="img/p2.png" alt="pic"></div>
@@ -125,15 +252,45 @@
 	</div>
 
 	<footer id="b_4" class="b_li">
+
+
 		<div class="footer_top">
 			<div class="footer_top_left"></div>
 			<div class="footer_top_right"></div>
-			<img src="img/bord.png" alt="board" class="footer_board">
+			<div class="wrapper">
+				<div class="footer_popup">
+					<h2 class="block_title">Последние новости</h2>
+					<ul class="news_list">
+						<li class="active">
+							<img src="img/bord.png" alt="board" class="footer_board">
+							<span>Install Fest Ukraine 2018</span>
+							<span>20.04.2018</span>
+						</li>
+						<li>
+							<img src="img/bord2.png" alt="board" class="footer_board">
+							<span>Вы, наша весна, с праздником!</span>
+							<span>07.03.2018</span>
+						</li>
+						<li>
+							<img src="img/bord3.png" alt="board" class="footer_board">
+							<span>З новим роком та Зiздвом Хрестовим!</span>
+							<span>29.12.2017</span>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
+
+
+
 
 		<div class="footer_bottom">
 			<div class="wrapper">
 				<div class="footer_bottom_left">
+					<div class="reserved">
+						<span>ООО «Каррера Украина»</span>
+						<span>Все права защищены</span>
+					</div>
 					<ul class="footer_socials">
 						<li><a href="#"><img src="img/ic_facebook (1).png" alt="fb"></a></li>
 						<li><a href="#"><img src="img/ic_vk (1).png" alt="vk"></a></li>
@@ -142,9 +299,14 @@
 						<li><a href="#"><img src="img/it_twitter (1).png" alt="tw"></a></li>
 					</ul>
 				</div>
-				<div class="footer_center"></div>
-				<div class="footer_right">
-					<a href="#"><img src="img/logofoot.png" alt="logo"></a>
+				<div class="footer_bottom_right">
+					<div class="footer_adress">
+						<span>04073 Украина, г. Киев</span>
+						<span>ул. Сырецкая, 9</span>
+					</div>
+					<a class="footer_logo" href="#">
+						<img src="img/logofoot.png" alt="logo">
+					</a>
 				</div>
 			</div>
 		</div>
